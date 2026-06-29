@@ -43,7 +43,7 @@ const AppointmentForm = ({
   patientId: string
   type: "create" | "cancel" | "schedule"
   appointment?: Appointment
-  setOpen: (value: boolean) => void
+  setOpen?: (value: boolean) => void
 }) => {
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
